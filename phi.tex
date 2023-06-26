@@ -1,0 +1,182 @@
+\documentclass{beamer}
+\usepackage[utf8]{inputenc}
+
+\usetheme{Madrid}
+\usecolortheme{default}
+
+\usepackage{mhchem}
+
+\usepackage{minted}
+
+\usepackage{xeCJK}
+%\setCJKmainfont{NaikaiFont-Regular-Lite.ttf}
+%\setmainfont{NaikaiFont-Regular-Lite.ttf}
+\setCJKmainfont{標楷體}
+\setmainfont{Times New Roman}
+
+\usepackage{color,xcolor}
+
+\usepackage{graphicx}
+
+\begin{document}
+\title{物理科探究與實作 - 電子學}
+\author{21、27、37、44、45、46}
+
+\frame{\titlepage}
+
+\centering
+\begin{frame}
+	\frametitle{電阻的測量}
+	\framesubtitle{高電阻法}
+	\begin{tabular}{|c|c|c|}
+		\hline
+		& 安培計讀數(mA) & 伏特計讀數(V) \\
+		\hline
+		R1 & 16.5 & 1.35 \\
+		\hline
+		R2 & 40 & 0.80 \\
+		\hline
+	\end{tabular}
+\end{frame}
+
+\begin{frame}
+	\frametitle{目錄}
+	\begin{itemize}
+		\item 低電阻法與高電阻法測量電阻
+		\item 鉛筆電阻的測量
+		\item 電池內電阻的測量
+		\item 透過發光二極體求得普朗克常數
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\frametitle{電阻的測量}
+	\framesubtitle{低電阻法}
+	\begin{tabular}{|c|c|c|}
+		\hline
+		& 安培計讀數(mA) & 伏特計讀數(V) \\
+		\hline
+		R1 & 15 & 1.2 \\
+		\hline
+		R2 & 45 & 0.9 \\
+		\hline
+	\end{tabular}
+\end{frame}
+
+\begin{frame}
+	\frametitle{電阻的測量}
+	\framesubtitle{比較}
+	\begin{tabular}{|c|c|c|c|}
+		\hline
+		& 高電阻法測量值 & 低電阻法測量值 & 實際測量值 \\
+		\hline
+		R1 & 81.81 & 80.00 & 101.2 \\
+		\hline
+		R2 & 20.00 & 20.00 & 20.4 \\
+		\hline
+	\end{tabular}
+\end{frame}
+
+\begin{frame}
+	\frametitle{鉛筆電阻的測量}
+	\framesubtitle{層數的比較}
+	\begin{tabular}{|c|c|c|}
+		\hline
+		& 1 x 2 方格 & 1 x 4 方格  \\
+		\hline
+		一層 & $0.12 \times 10^6$ & $0.20 \times 10^6$  \\
+		\hline
+		二層 & $0.05 \times 10^6$ & $0.10 \times 10^6$  \\
+		\hline
+	\end{tabular}
+\end{frame}
+
+\begin{frame}
+	\frametitle{鉛筆電阻的測量}
+	\framesubtitle{層數的比較}
+	\begin{tabular}{|c|c|c|}
+		\hline
+		& 1 x 2 方格 & 1 x 4 方格  \\
+		\hline
+		一層 & $0.12 \times 10^6$ & $0.20 \times 10^6$  \\
+		\hline
+		二層 & $0.05 \times 10^6$ & $0.10 \times 10^6$  \\
+		\hline
+	\end{tabular}
+\end{frame}
+
+\begin{frame}
+	\frametitle{電池內電阻的測量}
+	\framesubtitle{電池：1.5 V}
+	\begin{tabular}{|c|c|c|c|c|}
+		\hline
+		安培計讀數(mA) & 10 & 20 & 30 & 40  \\
+		\hline
+		伏特計讀數(V) & 1.35 & 1.25 & 1.20 & 1.15  \\
+		\hline
+		計算內電阻值 & 0.015 & 0.0125 & 0.01 & 0.00875 \\
+		\hline
+	\end{tabular}
+\end{frame}
+
+\begin{frame}
+	\frametitle{透過發光二極體求普朗克常數}
+	\framesubtitle{紅光：623 nm}
+	\begin{tabular}{|c|c|c|c|c|c|}
+		\hline
+		伏特計讀數(V) & 1.55 & 1.70 & 1.75 & 1.8 & 1.85  \\
+		\hline
+		安培計讀數(mA) & 1.40 & 1.55 & 2.40 & 3.30 & 4.80  \\
+		\hline
+	\end{tabular}
+\end{frame}
+
+\begin{frame}
+	\frametitle{透過發光二極體求普朗克常數}
+	\framesubtitle{綠光：520 nm}
+	\begin{tabular}{|c|c|c|c|c|c|}
+		\hline
+		伏特計讀數(V) & 1.75 & 1.90 & 2.00 & 2.10 & 2.35  \\
+		\hline
+		安培計讀數(mA) & 0.45 & 1.40 & 2.00 & 2.35 & 3.70  \\
+		\hline
+	\end{tabular}
+\end{frame}
+
+\begin{frame}
+	\frametitle{透過發光二極體求普朗克常數}
+	\framesubtitle{藍光：465 nm}
+	\begin{tabular}{|c|c|c|c|c|c|}
+		\hline
+		伏特計讀數(V) & 2.00 & 2.20 & 2.40 & 2.50 & 2.60  \\
+		\hline
+		安培計讀數(mA) & 0.10 & 0.35 & 1.00 & 1.35 & 2.10  \\
+		\hline
+	\end{tabular}
+\end{frame}
+
+\begin{frame}
+	\frametitle{透過發光二極體求普朗克常數}
+	\framesubtitle{透過 $h=eV_K/f$ 求得結果}
+	\begin{tabular}{|c|c|c|c|c|}
+		\hline
+		 & 紅光 & 綠光 & 藍光 & 理論值  \\
+		\hline
+		普朗克常數 & $5.81 \times 10^{-34}$ & $5.54 \times 10^{-34}$ & $6.44 \times 10^{-34}$ & $6.62 \times 10^{-34}$  \\
+		\hline
+	\end{tabular}
+\end{frame}
+
+\begin{frame}
+	\frametitle{遇到的問題}
+	\begin{itemize}
+		\item 某人體脂太高三用點表測不出電阻
+		\item 綠色燈泡亮紅光
+		\item 有人接電路時手賤
+		\item 電阻的顏色對色盲不友善
+		\item 有人從前面拿回來的東西永遠是錯的
+		\item 冷氣一直吹頭好痛
+	\end{itemize}
+\end{frame}
+
+\end{document}
